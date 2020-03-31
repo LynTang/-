@@ -1,0 +1,52 @@
+
+blockquote,body,h1,h2,h3,h4,h5,h6,hr,ul,ol,li,dl,dt,dd,p,input,button,textarea,fieldset,form,legend,pre,td,th {
+    margin: 0;
+    padding: 0; 
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+h1,h2,h3,h4,h5,h6,button,input,select,textarea {
+	font-size:100%
+}
+a{
+    text-decoration: none;
+    color: inherit;  /* 颜色继承父元素 */
+}
+img{
+    border: 0;
+    vertical-align: top;   /*解决图片底部白边 */
+}
+ol, ul {
+    list-style: none;
+}
+input,textarea,button,select {
+    border: 0;
+    outline: none;  /* 取消聚焦边框 */
+    outline-offset: 0;
+    box-sizing: border-box;
+}
+input:focus,textarea:focus,button:focus,select:focus {
+    outline: none;
+    outline-offset: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote::before, blockquote::after,
+q::before, q::after {
+    content: '';
+    content: none;
+}
+
+
+
