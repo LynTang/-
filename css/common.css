@@ -93,7 +93,7 @@ header .logo a{
 .search .searchform input{
     width: 434px;
     height: 36px;
-    padding: 2px 10px 2px 22px;
+    padding: 2px 20px 2px 14px;
     color: #333;
     float: left;
 }
@@ -423,6 +423,9 @@ header .logo a{
     height: 22px;
     margin-left: 20px;
     cursor: pointer;
+}
+.ft-copyright .ft-share i:hover {
+    opacity: .8;
 }
 .ft-copyright .ft-share i.ft-share-icon-weibo {
     background: url("../images/index-bg.png") no-repeat -160px 3px;
