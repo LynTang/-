@@ -13,6 +13,7 @@ body {
 .fr {
     float: right;
 }
+
 .clearfix::after{
     content: "";
     display: block;
@@ -24,9 +25,6 @@ body {
     width: 100%;
     height: 45px;
     background: #ECECEC;
-}
-.shortcut .wrap {
-    overflow: hidden;
 }
 .shortcut ul li {
     float: left;
@@ -44,6 +42,9 @@ body {
     margin: 14px 8px 0 0;
     vertical-align: top;
 }
+.shortcut ul li {
+    position: relative;
+}
 .shortcut ul li.spacer {
     width: 1px;
     height: 12px;
@@ -58,6 +59,40 @@ body {
 }
 .shortcut ul li a:hover {
     color: #E92131;
+}
+.shortcut ul li .follow {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 45px;
+    margin-left: -50px;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, .05);
+}
+.shortcut ul li .follow::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    margin-left: -8px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 10px solid #fff;
+}
+.shortcut ul li .follow img {
+    width: 80px;
+    height: 80px;
+}
+.shortcut ul li .follow p {
+    line-height: 16px;
+    text-align: center;
+    margin-top: 8px;
+}
+.shortcut ul li:hover .follow {
+    display: block;
 }
 
 /* 头部 */
@@ -441,4 +476,33 @@ header .logo a{
 }
 .ft-copyright .ft-share i.ft-share-icon-facebook {
     background: url("../images/index-bg.png") no-repeat -160px -112px;
+}
+
+body .back-top {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    position: fixed;
+    right: 10px;
+    bottom: 80px;
+    cursor: pointer;
+}
+.back-top:hover {
+    background: #E92131;
+}
+.back-top img {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -12px;
+    margin-top: -12px;
+}
+.back-top.hide {
+    display: none;
+}
+.back-top.show {
+    display: block;
 }

@@ -399,6 +399,10 @@
     margin-left: 14px;
     margin-bottom: 14px;
 }
+.brick-list .product-list .product-item:hover {
+    
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, .05);
+}
 .product-list .product-item .product-img {
     width: 232px;
     height: 174px;
