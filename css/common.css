@@ -487,6 +487,7 @@ body .back-top {
     right: 10px;
     bottom: 80px;
     cursor: pointer;
+    display: none;
 }
 .back-top:hover {
     background: #E92131;
